@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Roboto', sans-serif;
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 100%;
+            height: 80px;
+            padding: 20px;
+        }
+
+        .buttons {
+            border-radius: 10px;
+        }
+
+        section {
+            width: 100%;
+            height: 100%;
+        }
+
+        .calendar__month {
+            font-size: xx-large;
+        }
+
+        .calendar__week,
+        .calendar__header {
+            display: grid;
+            grid-template-columns: repeat(7, 1fr);
+        }
+
+        .calendar__week {
+            grid-auto-rows: 100px;
+            text-align: right;
+
+        }
+
+        .calendar__header {
+            grid-auto-rows: 50px;
+            align-items: center;
+            text-align: center;
+            border-bottom: 1px solid rgb(202, 201, 201);
+        }
+
+        .calendar__day {
+            padding: 16px;
+            border: 0.5px solid rgb(221, 221, 221);
+            font-weight: bold;
+        }
+
+        .calendar__weeknd {
+            padding: 16px;
+            border: 0.5px solid rgb(221, 221, 221);
+            opacity: 0.5;
+            background-color: rgb(236, 233, 233);
+            font-weight: bold;
+        }
+
+        .calendar__dec {
+            padding: 16px;
+            border: 0.5px solid rgb(221, 221, 221);
+            opacity: 0.5;
+            font-weight: bold;
+        }
+
+        .calendar__today{
+            display: inline-block;
+            background-color: red;
+            border-radius: 50%;
+            height: 25px;
+            width: 25px;
+            color: white;
+        }
+
+        .weeknd {
+            opacity: 0.5;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <p class="calendar__month"><b>November</b> 2021</p>
+        <div class="buttons">
+            <button><</button>
+            <button>Today</button>
+            <button>></button>
+        </div>
+    </header>
+    <main>
+        <section>
+            <div class="calendar">
+                <div class="calendar__header">
+                    <div>Mon</div>
+                    <div>Tue</div>
+                    <div>Wed</div>
+                    <div>Thu</div>
+                    <div>Fri</div>
+                    <div class="weeknd">Sat</div>
+                    <div class="weeknd">Sun</div>
+                </div>
+                <div class="calendar__week">
+                    <div class="calendar__day">1 Nov</div>
+                    <div class="calendar__day">2</div>
+                    <div class="calendar__day">3</div>
+                    <div class="calendar__day">4</div>
+                    <div class="calendar__day">5</div>
+                    <div class="calendar__weeknd">6</div>
+                    <div class="calendar__weeknd">7</div>
+                </div>
+                <div class="calendar__week">
+                    <div class="calendar__day">8</div>
+                    <div class="calendar__day">9</div>
+                    <div class="calendar__day">10</div>
+                    <div class="calendar__day">11</div>
+                    <div class="calendar__day">12</div>
+                    <div class="calendar__weeknd">13</div>
+                    <div class="calendar__weeknd">14</div>
+                </div>
+                <div class="calendar__week">
+                    <div class="calendar__day">15</div>
+                    <div class="calendar__day">16</div>
+                    <div class="calendar__day">
+                        <div class="calendar__today">17</div></div>
+                    <div class="calendar__day">18</div>
+                    <div class="calendar__day">19</div>
+                    <div class="calendar__weeknd">20</div>
+                    <div class="calendar__weeknd">21</div>
+                </div>
+                <div class="calendar__week">
+                    <div class="calendar__day">22</div>
+                    <div class="calendar__day">23</div>
+                    <div class="calendar__day">24</div>
+                    <div class="calendar__day">25</div>
+                    <div class="calendar__day">26</div>
+                    <div class="calendar__weeknd">27</div>
+                    <div class="calendar__weeknd">28</div>
+                </div>
+                <div class="calendar__week">
+                    <div class="calendar__day">29</div>
+                    <div class="calendar__day">30</div>
+                    <div class="calendar__dec">1 Dec</div>
+                    <div class="calendar__dec">2</div>
+                    <div class="calendar__dec">3</div>
+                    <div class="calendar__weeknd">4</div>
+                    <div class="calendar__weeknd">5</div>
+                </div>
+                <div class="calendar__week">
+                    <div class="calendar__dec">6</div>
+                    <div class="calendar__dec">7</div>
+                    <div class="calendar__dec">8</div>
+                    <div class="calendar__dec">9</div>
+                    <div class="calendar__dec">10</div>
+                    <div class="calendar__weeknd">11</div>
+                    <div class="calendar__weeknd">12</div>
+                </div>
+        </section>
+    </main>
+</body>
+
+</html>
